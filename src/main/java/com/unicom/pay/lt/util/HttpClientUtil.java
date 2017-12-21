@@ -203,11 +203,11 @@ public class HttpClientUtil {
 	 * @param params
 	 * @return
 	 * @author litong
-	 * @throws IOException
+	 * @throws Exception 
 	 * @create 2017年5月22日
 	 */
 	public static String post(String url, Map<String, Object> params)
-			throws IOException {
+			throws Exception {
 		HttpPost httppost = new HttpPost(url);
 		config(httppost);
 		setPostParams(httppost, params);
